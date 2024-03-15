@@ -59,7 +59,7 @@ let config = {
     let baseImage = this.textures.get("base");
     let baseHeight = baseImage.getSourceImage().height;
     let baseWidth = baseImage.getSourceImage().width;
-    base= this.add.tileSprite(game.config.width/2, game.config.height-baseHeight/2,baseWidth,baseHeight,"base");
+    base = this.add.tileSprite(game.config.width / 2, game.config.height - baseHeight / 2, game.config.width, baseHeight, "base");
     this.physics.add.existing(base,true);
     base.setDepth(1);
     let startGameImage = this.add.image(game.config.width/2,game.config.height/3,"startGame");
